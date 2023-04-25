@@ -1,0 +1,376 @@
+:root {
+  /* Fonds */
+  --primary-font: "Roboto", sans-serif;
+  --secondery-font: "Raleway", sans-serif;
+
+  /* Color */
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-green: #31d0aa;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue-modal: #2e2f42;
+  --color-grey: #2e2f42;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
+}
+
+body {
+  font-family: var(--primary-font);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  background-color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* заголовки */
+/* h1 */
+.hero-title {
+  color: var(--color-white);
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: auto;
+  margin-bottom: 48px;
+}
+/* h2 */
+.title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+/* h3 */
+.subtitle {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.list a {
+  text-decoration: none;
+}
+.section-about,
+.section-work {
+  background: #e5e5e5;
+}
+.section-about {
+  padding-top: 120px;
+}
+.section {
+  padding-bottom: 120px;
+}
+
+.hero {
+  background: var(--color-navy-blue-modal);
+  padding: 188px 0;
+}
+
+.section-team {
+  background-color: var(--color-cloud);
+  padding: 120px 0;
+}
+.item-team {
+  border-radius: 4px;
+  border-left: 4px;
+  width: calc((100% - 72px) / 4);
+  background-color: var(--color-white);
+  border-radius: 0px 0px 4px 4px;
+}
+.blok-name-team {
+  padding: 32px 16px;
+}
+.subtitle-team {
+  margin-bottom: 8px;
+}
+.footer {
+  background: var(--color-navy-blue-modal);
+}
+/* text */
+
+.text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.small-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-cloud);
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* nav */
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+/* logo */
+.logo {
+  font-family: var(--secondery-font);
+  color: var(--color-iris);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo-part {
+  color: var(--color-navy-blue-modal);
+}
+
+.logo-part-footer {
+  color: var(--color-cloud);
+}
+
+.site-nav-item {
+  display: inline-block;
+
+  color: var(--color-navy-blue-modal);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: flex;
+  gap: 40px;
+}
+
+.site-nav-item:hover,
+.site-nav-item:focus {
+  color: var(--color-ocean);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-cornflower);
+}
+.container-nav {
+  display: flex;
+  align-items: center;
+}
+
+.button-nav {
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+}
+
+.button-nav:hover,
+.button-nav:focus {
+  background-color: var(--color-ocean);
+}
+
+.kontacts-mail,
+.kontacts-tel {
+  display: block;
+  color: var(--primary-text-color);
+  font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.kontacts-list {
+  gap: 40px;
+  display: flex;
+}
+
+.kontacts {
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: normal;
+  color: var(--primary-text-color);
+}
+
+.kontacts-mail:hover,
+.kontacts-mail:focus {
+  color: var(--color-ocean);
+}
+
+.kontacts-mail {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.list-about {
+  display: flex;
+  gap: 24px;
+}
+.items-about {
+  width: calc((100% - 24px * 3) / 4);
+}
+
+.items-about-subtitle {
+  margin-bottom: 8px;
+}
+
+.title-what {
+  margin-bottom: 72px;
+}
+
+.list-section-what {
+  display: flex;
+  gap: 24px;
+}
+
+.img-section-what {
+  width: calc((100% - 24px * 2) / 3);
+}
+
+.title-team {
+  margin-bottom: 72px;
+}
+
+.list-section-team {
+  display: flex;
+  gap: 24px;
+}
+.blok-name-team > h3 {
+  text-align: center;
+}
+.blok-name-team > p {
+  text-align: center;
+}
+
+/* Portfolio */
+
+.button-portfolio {
+  color: var(--color-iris);
+  background-color: var(--color-cloud);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--color-cornflower);
+  border-radius: 4px;
+  padding: 12px 24px;
+  margin-right: 24px;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--color-white);
+  background: var(--color-ocean);
+  border: 1px solid transparent;
+}
+
+.small-text {
+  width: 264px;
+}
+.logo-link-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.button-portfolio-contaiter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+  gap: 24px;
+}
+
+.list-container-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.name-item-portfolio {
+  border-top: none;
+  border-right: 1px solid var(--color-cornflower);
+  border-bottom: 1px solid var(--color-cornflower);
+  border-left: 1px solid var(--color-cornflower);
+  padding: 32px 16px;
+}
+
+.items-portfolio {
+  gap: 24px;
+}
+.name-item {
+  margin-bottom: 8px;
+}
+.footer {
+  padding: 100px 0;
+}
