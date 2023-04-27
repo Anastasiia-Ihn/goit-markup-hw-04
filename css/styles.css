@@ -17,6 +17,7 @@
   --color-grey: #2e2f42;
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
+  --color-bg: #e5e5e5;
 }
 
 body {
@@ -80,10 +81,12 @@ img {
   text-decoration: none;
 }
 .section-about,
-.section-work {
-  background: #e5e5e5;
+.section-work,
+.section-customers {
+  background: var(--color-bg);
 }
-.section-about {
+.section-about,
+.section-customers {
   padding-top: 120px;
 }
 .section {
@@ -91,8 +94,14 @@ img {
 }
 
 .hero {
-  background: var(--color-navy-blue-modal);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 188px 0;
+  background-size: cover;
 }
 
 .section-team {
@@ -115,6 +124,7 @@ img {
 .footer {
   background: var(--color-navy-blue-modal);
 }
+
 /* text */
 
 .text {
@@ -127,6 +137,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-cloud);
+}
+
+.text-footer {
+  font-weight: 500;
+  color: var(--color-white);
 }
 
 .container {
@@ -262,7 +277,7 @@ img {
 }
 
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--color-cornflower);
 }
 
 .list-about {
