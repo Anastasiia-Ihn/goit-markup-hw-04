@@ -99,7 +99,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 70%)
     ),
@@ -120,9 +119,15 @@ img {
   width: calc((100% - 72px) / 4);
   background-color: var(--color-white);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .blok-name-team {
   padding: 8px 16px;
+}
+
+.blok-name {
+  padding: 32px 0;
 }
 .subtitle-team {
   margin-bottom: 8px;
@@ -164,6 +169,7 @@ img {
 
 .title-customers {
   margin-bottom: 72px;
+  line-height: 1.1;
 }
 
 .customers-link {
@@ -201,6 +207,7 @@ img {
 }
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 .blok-footer {
   margin-right: 120px;
@@ -366,6 +373,11 @@ img {
 
 .page-header {
   border-bottom: 1px solid var(--color-cornflower);
+  box-shadow: (
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08)
+  );
 }
 
 .list-about {
@@ -380,10 +392,11 @@ img {
   margin-bottom: 8px;
 }
 
-.icon-list-about {
-}
-
 .icons-list-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   background-color: var(--color-cloud);
   padding: 24px 100px;
   border-radius: 4px;
