@@ -189,13 +189,9 @@ img {
   fill: currentColor;
 }
 
-.customers-link:hover .icon-customers,
-.customers-link:focus .icon-customers {
-  color: var(--color-ocean);
-}
-
 .customers-link:hover,
 .customers-link:focus {
+  color: var(--color-ocean);
   border-color: var(--color-ocean);
 }
 
