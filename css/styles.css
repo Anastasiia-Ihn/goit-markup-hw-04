@@ -83,7 +83,7 @@ img {
 .section-about,
 .section-work,
 .section-customers {
-  background: var(--color-bg);
+  background: var(--color-white);
 }
 .section-about,
 .section-customers {
@@ -122,13 +122,93 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .blok-name-team {
-  padding: 32px 16px;
+  padding: 8px 16px;
 }
 .subtitle-team {
   margin-bottom: 8px;
 }
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-iris);
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--color-ocean);
+}
+.socials-icon {
+  fill: var(--color-cloud);
+}
+
+/* .section-customers */
+.list-section-customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.title-customers {
+  margin-bottom: 72px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+  width: 168px;
+  border: 1px solid var(--color-light-slate);
+  border-radius: 4px;
+}
+
+.icon-customers {
+  fill: var(--color-light-slate);
+}
+
+.customers-link:hover .icon-customers,
+.customers-link:focus .icon-customers {
+  fill: var(--color-ocean);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--color-ocean);
+}
+
+/* footer */
+
 .footer {
   background: var(--color-navy-blue-modal);
+}
+
+.socials-footer {
+  gap: 16px;
+}
+.container-footer {
+  display: flex;
+}
+.blok-footer {
+  margin-right: 120px;
+}
+
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+  background-color: var(--color-green);
 }
 
 /* text */
@@ -148,6 +228,8 @@ img {
 .text-footer {
   font-weight: 500;
   color: var(--color-white);
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .container {
@@ -295,6 +377,16 @@ img {
 }
 
 .items-about-subtitle {
+  margin-bottom: 8px;
+}
+
+.icon-list-about {
+}
+
+.icons-list-about {
+  background-color: var(--color-cloud);
+  padding: 24px 100px;
+  border-radius: 4px;
   margin-bottom: 8px;
 }
 
