@@ -123,10 +123,11 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .blok-name-team {
-  padding: 8px 16px;
+  padding: 32px 0;
 }
 
-.subtitle-team {
+.subtitle-team,
+.text-team {
   margin-bottom: 8px;
 }
 
@@ -135,7 +136,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding: 32px 0;
 }
 .socials-item {
   width: 40px;
@@ -310,8 +310,6 @@ img {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--color-cornflower);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container-nav {
   display: flex;
@@ -379,7 +377,10 @@ img {
 .page-header {
   border-bottom: 1px solid var(--color-cornflower);
 }
-
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .list-about {
   display: flex;
   gap: 24px;
